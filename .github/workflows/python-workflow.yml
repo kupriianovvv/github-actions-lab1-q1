@@ -13,11 +13,21 @@ jobs:
       with:
         python-version: 3.11
 
+    - name: 'print dir'
+      run: 'ls'
+
     - name: 'clone repo'
       run: 'git clone https://github.com/kupriianovvv/github-actions-lab1-q1.git'
 
+    - name: 'print dir'
+      run: 'ls'
+
     - name: 'change dir'
       run: 'cd github-actions-lab1-q1'
+
+    - name: 'print dir'
+      run: 'ls'
+      
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
