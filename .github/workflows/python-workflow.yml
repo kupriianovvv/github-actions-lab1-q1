@@ -16,14 +16,9 @@ jobs:
     - name: 'print dir'
       run: 'ls'
 
-    - name: 'clone repo'
-      run: 'git clone https://github.com/kupriianovvv/github-actions-lab1-q1.git'
+    - name: 'checkout repo'
+      uses: actions/checkout@v4
 
-    - name: 'print dir'
-      run: 'ls'
 
     - name: Install dependencies
-      run: |
-        cd github-actions-lab1-q1
-        ls
-        pip install -r requirements.txt
+      run: pip install -r requirements.txt
